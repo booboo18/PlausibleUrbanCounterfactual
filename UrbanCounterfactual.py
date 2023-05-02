@@ -1,11 +1,18 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+
 """
-This is the anonymised private code submission for Manuscript ID IJGIS-2022-0537 entitled 
-"Explaining Holistic Image Classifiers in Urban Analytics with Plausible Counterfactuals in urban analytics"  
-to the International Journal of Geographical Information Science.
-As the data cannot be redistributed due to commercial license, a set of simulated data and models have been used instead.  
+"Explaining Holistic Image Regressors and Classifiers in Urban Analytics with Plausible Counterfactuals"  in the International Journal of Geographical Information Science. 
+
+We propose a new form of plausible counterfactual explanation designed to explain the behaviour of computer vision systems 
+used in urban analytics that make predictions based on properties across the entire image,
+rather than specific regions of it. This is the code to run the urban counterfactual analysis. 
+As the data cannot be redistributed due to commercial license, simulated data and model have been used instead. 
+Users would need to replace the VAE model and regressor with their own data and model in order to run the counterfactual algorithm. 
+
+Authors: Stephen Law, Rikuo Hasegawa, Brooks Paige, Chris Russell, Andrew Elliott
+License: MIT
 """
+
+# code starts here
 
 from torch import optim
 import torch
@@ -227,6 +234,8 @@ def defineVAEModel1():
 
 # main script starts here
 lat_dim=1568
+
+# this is a simulated input and target files. please replace this with your own files in this shape.
 X = np.load('testX.npy') # this is a simulated input that we created for demonstration
 y = np.load('testy.npy') # this is a simulated target that we created for demonstration
 target=2.5 
@@ -236,15 +245,21 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 regression_model = nn.Sequential( 
   nn.Linear(lat_dim, 1),
   ).to(device)
-path = "test_REG_model.pth" 
-regression_model.load_state_dict(torch.load(path))
+
+# user needs to slot in their own regressor pth file here to load.
+#path = "test_REG_model.pth" 
+#regression_model.load_state_dict(torch.load(path))
+
 regression_model.requires_grad = False
 regression_model.eval()
 
 # this setup and loads the VAEGAN model for the test data
 model, discriminator = defineVAEModel1() 
-path = "test_VAE_model.pth" 
-model.load_state_dict(torch.load(path, map_location=device))
+
+## user needs to slot in their own vae model pth file here to load.
+#path = "test_VAE_model.pth" 
+#model.load_state_dict(torch.load(path, map_location=device))
+
 model.to(device)
 model.requires_grad = False
 model.eval()
