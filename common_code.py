@@ -1,12 +1,11 @@
 
 """
-"Explaining Holistic Image Regressors and Classifiers in Urban Analytics with Plausible Counterfactuals"  in the International Journal of Geographical Information Science. 
+This is the code for the paper: "Explaining Holistic Image Regressors and Classifiers in Urban Analytics with Plausible Counterfactuals" 
+by Stephen Law, Rikuo Hasegawa, Brooks Paige, Chris Russell, Andrew Elliott.  
 
-We propose a new form of plausible counterfactual explanation designed to explain the behaviour of computer vision systems 
-used in urban analytics that make predictions based on properties across the entire image,
-rather than specific regions of it. This is the code to run the urban counterfactual analysis. 
-As the data cannot be redistributed due to commercial license, simulated data and model have been used instead. 
-Users would need to replace the VAE model and regressor with their own data and model in order to run the counterfactual algorithm. 
+In the paper, we proposed a new form of plausible counterfactual explanation designed to explain the behaviour of computer vision systems 
+used in urban analytics that make predictions based on properties across the entire image, rather than specific regions of it. This is the code to run the urban counterfactual analysis. 
+As the data cannot be redistributed due to commercial license, simulated data and model have been used instead. Users would need to replace the VAE model and regressor with their own data and model in order to run the counterfactual algorithm. 
 
 Authors: Stephen Law, Rikuo Hasegawa, Brooks Paige, Chris Russell, Andrew Elliott
 License: MIT
