@@ -1,11 +1,10 @@
 # PlausibleUrbanCounterfactual
-This is the code for the paper: "Explaining Holistic Image Regressors and Classifiers in Urban Analytics with Plausible Counterfactuals" by 
-Stephen Law, Rikuo Hasegawa, Brooks Paige, Chris Russell, Andrew Elliott
+This is the code for the paper: "Explaining Holistic Image Regressors and Classifiers in Urban Analytics with Plausible Counterfactuals"(Law et al 2023)
 We provide an implementation of the urban counterfactual method in `common_code.py` with simulated data. 
 
-
-
 ## references
+
+Stephen Law, Rikuo Hasegawa, Brooks Paige, Chris Russell & Andrew Elliott (2023) Explaining holistic image regressors and classifiers in urban analytics with plausible counterfactuals, International Journal of Geographical Information Science, DOI: 10.1080/13658816.2023.2214592 
 
 ```
 
