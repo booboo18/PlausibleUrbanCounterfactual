@@ -4,9 +4,25 @@ Stephen Law, Rikuo Hasegawa, Brooks Paige, Chris Russell, Andrew Elliott
 We provide an implementation of the urban counterfactual method in `common_code.py` with simulated data. 
 
 
-## Other references
+
+## references
 
 ```
+
+@article{doi:10.1080/13658816.2023.2214592,
+author = {Stephen Law and Rikuo Hasegawa and Brooks Paige and Chris Russell and Andrew Elliott},
+title = {Explaining holistic image regressors and classifiers in urban analytics with plausible counterfactuals},
+journal = {International Journal of Geographical Information Science},
+volume = {0},
+number = {0},
+pages = {1-22},
+year  = {2023},
+publisher = {Taylor & Francis},
+doi = {10.1080/13658816.2023.2214592},
+URL = {https://doi.org/10.1080/13658816.2023.2214592},
+eprint = {https://doi.org/10.1080/13658816.2023.2214592}
+}
+
 @inproceedings{Elliott2021PerceptualBall,
   title={Explaining Classifiers using Adversarial Perturbations on the Perceptual Ball},
   author={Elliott, Andrew and Law, Stephen and Russell, Chris},
